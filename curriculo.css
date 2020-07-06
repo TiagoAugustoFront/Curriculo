@@ -51,7 +51,7 @@ ul,li{
 }
 
 .subtitle{   
-    color: #182f4e;   
+    color: #000000;   
     font-family: 'Ubuntu', sans-serif;
     
 
@@ -95,7 +95,7 @@ a{
 }
 
 #name #text h1{
-    color: #182f4e;
+    color: #000000;
 
     font-family: 'Ubuntu', sans-serif;
     margin-bottom: 0px;

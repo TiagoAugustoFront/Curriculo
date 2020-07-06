@@ -1,0 +1,191 @@
+html, body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul,li{
+    list-style: disc;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1.1fr 3.5fr 1.3fr 1.1fr;
+    grid-template-rows: 10vh 130vh 10vh;
+
+    box-shadow: 10px;
+
+    min-width: 900px;
+
+    background: rgb(223, 217, 217);
+    
+    grid-template-areas:". . . ."
+                        ". part1 part2 ."
+                        ". . . .";
+}
+
+.part1{
+    background: #ffffff;
+    grid-area: part1;
+
+    border-radius: 8px 0px 0px 8px;
+
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-template-areas:"name"
+                        "profile"
+                        "experience"
+                        "education"
+                        "projects";
+}
+
+.text{
+    color: #222222;
+    font-family: 'Ubuntu', sans-serif;
+
+    margin-left: 23px;
+    line-height: 18px;
+}
+
+.subtitle{   
+    color: #182f4e;   
+    font-family: 'Ubuntu', sans-serif;
+    
+
+    margin-top: 36px;
+    margin-left: 23px;
+}
+
+a{
+    text-decoration: none;
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+#name{
+
+    grid-area: name;
+
+    height: 30vh;
+
+    display: flex;
+}
+
+#name img{
+    margin-top: 20px;
+    margin-left: 10px;
+
+    height: 150px;
+    width: 150px;
+
+    border-radius: 100px;
+}
+
+#name #text{
+    margin-left: 11px;
+
+    font-family: 'Ubuntu', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+#name #text h1{
+    color: #182f4e;
+
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 0px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+#profile{
+    grid-area: profile;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+#experience{
+    grid-area: experience;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+#education{
+    grid-area: education;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+#projects{
+
+    grid-area: projects;
+}
+
+#projects a{
+    color: #182f4e;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+  
+.part2{
+    background:#000000;
+
+    border-radius: 0px 8px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: part2;
+}
+
+.adress{
+    width: 90%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.adress .subtitle2{
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.container-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.part2 .icon{
+    width: 30px;
+    align-self: center;
+}
+
+.knowledge{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.knowledge .subtitle2{
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.knowledge .title4{
+    border-bottom: 4px solid #ffffff;
+    margin: 0;
+    margin-top: 5px;
+    color: #ffffff;
+    height: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
